@@ -54,5 +54,5 @@ def mnist_load():
     return train_gen, test_gen
 
 
-def foo(x, y):
-    return 2 * x + 3 * y
+if __name__ == "__main__":
+    mnist_load()
