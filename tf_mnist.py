@@ -68,7 +68,7 @@ class Model(object):
         init = tf.global_variables_initializer()
         self.sess.run(init)
 
-    def train(self, N_epochs):
+    def train(self, N_epochs=10):
 
         # training op created
         g_optim = tf.train.AdamOptimizer(1e-2).minimize(self.loss)
